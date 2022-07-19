@@ -1,0 +1,1050 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Nanum+Myeongjo&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Roboto:wght@100&display=swap');
+
+*{
+    margin:0; 
+    padding:0;
+    line-height: 2rem;}
+
+
+    h1,h2,h3,h4,h5{
+        font-family: 'Nanum Myeongjo', serif;
+
+    }
+    
+    ul ol{
+        font-family: 'Roboto', sans-serif;}
+    
+    p{
+        font-size: 20px;
+        color: rgb(24, 24, 24);
+        font-family: sans-serif;
+        }
+    
+    nav{
+        font-family:sans-serif;}
+
+    footer{font-family:sans-serif;}
+
+
+
+
+ /* HEADER */
+ header{
+    grid-area: header;
+ }
+
+nav{
+    background-color: #1a262c;
+    display: flex;
+    padding-top:30px;
+    padding-bottom: 30px;
+
+}
+
+ nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    list-style-type:none;
+    width: 90%;
+ }
+
+ body > header > nav > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+ }
+
+nav ul li a:hover{
+    color: #f8c300;
+}
+
+.actActivo {
+    color: #f8c300;
+}
+
+.imagenEncabezado{
+    grid-area: imgEncabezado;
+    background-image: url(../imagenes/imagen-encabezado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+     } 
+     
+.imagenEncabezado h1 {
+    color:white;
+    padding: 2rem;
+    border-radius: 5rem;
+    backdrop-filter:blur(10px);
+    font-size:calc(2rem + 1vw);}
+
+.menuHamburguesa{display:none;}
+
+
+/* HEADER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRILLA PADRE */
+.grillaPadre{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "imgEncabezado imgEncabezado imgEncabezado"
+    "main main main"
+    "footer footer footer";
+ }
+
+ main{grid-area: main;}
+
+ 
+/* GRILLA PADRE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRILLA MAIN INDEX */
+.grillaMainIndex{
+    display: grid;
+    margin: auto;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-areas: 
+    "section1Index section1Index"
+    "section2Index section3Index"
+    "section2Index section3Index"
+    "section2Index section4Index"
+    "section5Index section5Index"
+    "section6Index section6Index"
+    "section7Index section7Index";}
+
+
+ 
+
+.section1Index{
+    grid-area: section1Index;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 15rem;
+    margin-bottom:15rem;
+}
+
+.section1Index h2 {
+
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+ .section2Index{
+    grid-area: section2Index;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    }
+
+ .section3Index{
+        grid-area: section3Index;
+        width: 90%;
+        text-align: justify;}
+
+ .section4Index{
+    grid-area: section4Index;
+    width: 90%;
+    text-align: justify;}
+
+ .section5Index{
+    grid-area: section5Index;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    }
+
+ .section6Index{
+    grid-area: section6Index;
+    display: flex;
+    flex-direction: row;
+     justify-content:space-evenly;
+    flex-wrap: wrap;}
+
+ .section7Index{
+    grid-area: section7Index;
+    display: flex;
+    background-color: #f8c300;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+    justify-content:center;} 
+
+.section7Index div {
+    width:50rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.section7Index p{
+    width: 40rem;
+    margin-top: 5rem;
+    text-align: justify;
+}
+
+
+.section7Index h2 {
+    color: white;
+    font-size: 4rem;
+}
+
+.section7Index iframe{
+    width: 90%;
+}
+
+/* GRILLA MAIN INDEX */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRILLA MAIN EXCURSIONES*/
+
+.grillamainExcursiones{
+    display: grid;
+    margin: auto;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-areas: 
+    "section1Excursiones section1Excursiones"
+    "section2Excursiones section2Excursiones"
+    "section3Excursiones section3Excursiones"
+    "section4Excursiones section4Excursiones";}
+
+.section1Excursiones{
+    grid-area: section1Excursiones;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 15rem;
+    margin-bottom:15rem;
+}
+.section2Excursiones{
+    grid-area: section2Excursiones;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.section3Excursiones{
+    grid-area: section3Excursiones;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #f8c300;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section3Excursiones div{
+    width: 50%;
+    margin: auto;
+}
+
+.section3Excursiones div h2{
+    margin-bottom: 3rem;
+    font-size:calc(2rem + 1vw);
+    color: white;}
+
+
+
+.section4Excursiones{
+    grid-area: section4Excursiones;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.excursionesLista{
+
+    border: 1px rgba(0,0,0 ,0.3) solid;
+    width: 25rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    transition: all 1s;}
+
+.excursionesLista:hover{
+    box-shadow: 0px 10px 10px black; 
+    cursor: pointer;
+}
+
+
+
+.excursionesLista div{
+    margin: auto;
+    text-align: justify;
+    width:21rem;}
+
+.excursionesLista div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.excursionesLista div p {
+    margin-bottom:2rem ;
+}
+
+.excursionesLista button{
+    width: 100%;
+    background-color: black;
+    border: none;
+    transition: all 1s;}
+
+.excursionesLista:hover button{
+    background-color:#f8c300;
+    color:#1a262c;
+    cursor: pointer;
+}
+
+.excursionesLista a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.excursionesLista:hover button a {
+    color:#1a262c;
+    transition: all 1s;
+}
+
+
+
+
+/* GRILLA MAIN EXCURSIONES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRILLA MAIN HOTELES*/
+
+
+.grillaMainHoteles{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-areas: 
+    "section1Hoteles section1Hoteles"
+    "section2Hoteles section2Hoteles"
+    "section3Hoteles section3Hoteles"
+    "section4Hoteles section4Hoteles";}
+
+.section1Hoteles{
+    grid-area:section1Hoteles;
+    background-color: #f8c300;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+
+.section1Hoteles img{
+    width: 50vw; 
+    height: 100vh;
+    margin:auto;
+}
+
+.section1Hoteles div{
+    width: 35rem;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem; 
+}
+.section1Hoteles h2{
+    width: 80%;
+    margin: auto;
+    font-size: calc(3rem + 1vw);
+    margin-bottom: 3rem;
+    color: white;
+   
+}
+
+.section1Hoteles p {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    font-size: clas(1rem + 1vw);
+}
+
+.section2Hoteles{
+    grid-area:section2Hoteles;
+    margin-top:10rem;
+    margin-bottom: 10rem;
+    padding: 2rem;
+    background-color: #22323a;
+}
+
+.section2Hoteles h2{
+    font-size: calc(2rem + 1vw);
+    color:white;
+    text-align: center;}
+
+
+.section3Hoteles{
+    grid-area:section3Hoteles;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hotelesListado{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border: 1px rgba(0,0,0 ,0.3) solid;
+    transition: all 1s;
+
+}
+
+.hotelesListado img {
+    margin:auto;
+}
+.hotelesListado div {
+    margin:auto;
+}
+
+.hotelesListado:hover{
+    box-shadow: 0px 10px 10px black; 
+    cursor: pointer;
+}
+
+.hotelesListado button{
+    width: 100%;
+    background-color: black;
+    border: none;
+    transition: all 1s;
+}
+
+.hotelesListado:hover button{
+    background-color:#f8c300;
+    color:#1a262c;
+    cursor: pointer;
+}
+
+.hotelesListado a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hotelesListado:hover button a {
+    color:#1a262c;
+    transition: all 1s;
+}
+
+.hotelesListado li {
+    color: white;
+    transition:all 1s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hotelesListado:hover li {
+    color: black;
+}
+
+.hotelesListado h3{
+    margin-top: 1rem;
+}
+
+/* GRILLA MAIN HOTELES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRILLA MAIN CONSEJOS*/
+
+.grillaMainConsejos{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-areas:
+    "section1Consejos section1Consejos"
+    "section2Consejos section2Consejos"
+    ;
+}
+
+.section1Consejos{
+    grid-area: section1Consejos;
+    background-color: #f8c300;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.section1Consejos div{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.section1Consejos h2{
+    width:30rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size:2rem;
+}
+
+.section1Consejos p {
+    width: 30rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+
+
+.section2Consejos{
+    grid-area:section2Consejos;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10rem;
+    text-align: justify;
+}
+
+
+
+
+.consejosListado li {
+    color: black;
+    font-size: 1rem;
+
+}
+
+.consejosListado{
+    margin-top: 4rem;
+}
+
+.consejosListado h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    background-color: #1a262c;
+    color: white;
+}
+
+
+
+
+/* GRILLA MAIN CONSEJOS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRILLA MAIN CONTACTO*/
+
+.grillaMainContacto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "section1Contacto section1Contacto"
+    "section2Contacto section2Contacto"
+    ;
+}
+
+
+
+.section1Contacto{
+   
+    grid-area: section1Contacto;
+    margin-top: 10rem;
+    width: 90%;
+    margin: auto;
+}
+
+.section1Contacto h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section2Contacto{
+    grid-area: section2Contacto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    margin-bottom: 10rem;
+}
+
+
+.section2Contacto img{
+    margin: auto;
+
+}
+
+.section2Contacto div{
+    margin: auto;
+    width: 50%;
+    
+}
+
+.section2Contacto h2 {
+    color:white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.section2Contacto p{
+    color: white;
+    text-align: justify;
+}
+
+/* seccion1 */
+#mainContacto > section:nth-child(1) div{
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#mainContacto > section:nth-child(1) h2 {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 2rem;}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
+      
+input[type=submit] {
+    width: 100%;
+    background-color:black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s;}
+      
+input[type=submit]:hover {
+    background-color:#f8c300;
+    color: black;}
+      
+input[type=email]{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;}
+
+ input[type=text]:focus { 
+    border: 3px solid #555; }
+  
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;}
+ /* seccion1 */    
+
+
+
+/* GRILLA MAIN CONTACTO*/
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+
+/* HEADER MEDIA  */
+ 
+    header nav ul {
+        display: none;
+    }
+
+    .menuHamburguesa{
+        display: block;
+        margin-left: 70%;}
+/* HEADER MEDIA  */
+
+
+
+
+
+
+
+
+/* MEDIA INDEX GRILLA */
+    .grillaMainIndex{
+        grid-template-areas: 
+        "section1Index section1Index"
+        "section2Index section2Index"
+        "section3Index section3Index"
+        "section4Index section4Index"
+        "section5Index section5Index"
+        "section6Index section6Index"
+        "section7Index section7Index";}
+
+    .section2Index img{
+        width: 300px;
+        height: 200px;
+        }
+
+    .section2Index{
+        margin-bottom: 5rem;
+    }
+
+    .section3Index{
+        margin: auto;}
+
+    .section4Index{
+        margin:auto;}
+
+    .section6Index img{
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .section7Index p{
+        width: 80%;
+
+    }
+/* MEDIA INDEX GRILLA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* MEDIA EXCURSIONES GRILLA */
+
+    body > main > section.section2Excursiones > img:nth-child(1){
+        width: 400px;
+        height: 650px;
+    }
+
+    body > main > section.section2Excursiones > img:nth-child(2){
+        display: none;
+    }
+
+    body > main > section.section2Excursiones > img:nth-child(3){
+        display: none;
+    }
+
+    .section4Excursiones .excursionesLista p {
+        display: none;
+    }
+
+    body > main > section.section1Hoteles > img{
+        display: none;
+    }
+
+
+ /* MEDIA EXCURSIONES GRILLA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER MEDIA  */
+
+.footerFuentes{
+    display: none;
+}
+
+.footerAutor{
+    text-align: center;
+}
+
+/* FOOTER MEDIA  */
+
+
+
+
+
+}/* FIN MEDIA QUERY */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* FOOTER */
+
+ footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1a262c;
+    padding-top:3rem;
+    padding-bottom: 2rem;
+ }
+
+footer p,li{
+    color: white;
+    list-style-type: none;
+}
+
+footer a {
+    color:white;
+    transition: 1s;
+    text-decoration: none;}
+
+footer a:hover{
+    color: #f8c300;
+}
+
+ /* FOOTER */
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
